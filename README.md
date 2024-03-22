@@ -18,3 +18,7 @@ It is the one the which triggers re-renders and it is the only variable whose va
 <h2>Rendering</h2>
 
 Rendering happens in cases. Initial rendering and setting the state of the component. During the initial render, <App/> renders all of its children. For subsequent renders, react efficently renders only the component which is responsible for triggering the render. Rendering involves in three phases : Triggering, render (making necessary changes in VDOM), commit to DOM(painting the UI). If the compenent which is rendered has children, all of them are rendered too (recursive). although this can be optimised with Memo.
+
+<h2>Lifting Up the State</h2>
+
+What if two or more components need the access of some state (imagine 2 components are completely far away and we cannot pass down the props to all the components). In such cases we will have lift the state variable to the common ancestor of all the components.

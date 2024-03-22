@@ -6,10 +6,11 @@ import State from "./components/componentMemory/state";
 import IsolatedState from "./components/componentMemory/isolatedState";
 import StateSnapShot from "./components/componentMemory/stateAsSnapshot";
 import QueueState from "./components/componentMemory/queueStates";
+import LiftingUpTheState from "./components/componentMemory/liftingState";
 export default function App() {
   return (
     <>
-      <QueueState />
+      <LiftingUpTheState />
     </>
   );
 }
