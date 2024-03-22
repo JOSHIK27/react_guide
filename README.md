@@ -26,3 +26,8 @@ What if two or more components need the access of some state (imagine 2 componen
 <h2>Preserving and Resetting Of state</h2>
 State is tied to position in the render tree. As the long the it is there, its state is preserved across the renders. The moment it is deleted from the ui tree, state will be reset to initial value. Also, different component at the same place will destroy the states during switching. 
 NOTE : If you are rendering based on if else (ternary operator) make sure u use key to make the components are different else react will render as if it is the same component with different props. Refer docs for better understanding
+
+<h2>Passing Data Via Context</h2>
+Usually we pass data from parent component to down the tree via props. But it will lead to performance issues when we pass through several children which dont even need them. This will cause unnecessary re renders. This can be solved by context. We wrap the parent component with the context and make sure all the children down the tree receives the data (context).
+
+![Alt text](image.png)
