@@ -7,10 +7,11 @@ import IsolatedState from "./components/componentMemory/isolatedState";
 import StateSnapShot from "./components/componentMemory/stateAsSnapshot";
 import QueueState from "./components/componentMemory/queueStates";
 import LiftingUpTheState from "./components/componentMemory/liftingState";
+import PreserveAndResetState from "./components/componentMemory/preserveAndResetState";
 export default function App() {
   return (
     <>
-      <LiftingUpTheState />
+      <PreserveAndResetState />
     </>
   );
 }

@@ -22,3 +22,7 @@ Rendering happens in cases. Initial rendering and setting the state of the compo
 <h2>Lifting Up the State</h2>
 
 What if two or more components need the access of some state (imagine 2 components are completely far away and we cannot pass down the props to all the components). In such cases we will have lift the state variable to the common ancestor of all the components.
+
+<h2>Preserving and Resetting Of state</h2>
+State is tied to position in the render tree. As the long the it is there, its state is preserved across the renders. The moment it is deleted from the ui tree, state will be reset to initial value. Also, different component at the same place will destroy the states during switching. 
+NOTE : If you are rendering based on if else (ternary operator) make sure u use key to make the components are different else react will render as if it is the same component with different props. Refer docs for better understanding
