@@ -8,10 +8,11 @@ import StateSnapShot from "./components/03_componentMemory/stateAsSnapshot";
 import QueueState from "./components/03_componentMemory/queueStates";
 import LiftingUpTheState from "./components/03_componentMemory/liftingState";
 import PreserveAndResetState from "./components/03_componentMemory/preserveAndResetState";
+import ViaContext from "./components/04_passingData/VIaContext";
 export default function App() {
   return (
     <>
-      <PreserveAndResetState />
+      <ViaContext />
     </>
   );
 }

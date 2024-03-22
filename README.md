@@ -1,7 +1,10 @@
 # React_Guide
 
-## Basics
+## Moto
 
+This repo goes through react documentation from the start to the end and follows some best practices. Few examples are taken from react documentation.
+
+<h2>What is REACT ?</h2>
 React is a javascript library (not framework !) which is very powerful in creating frontend applications with ease.
 
 <h2>What is JSX ?</h2>
@@ -28,6 +31,6 @@ State is tied to position in the render tree. As the long the it is there, its s
 NOTE : If you are rendering based on if else (ternary operator) make sure u use key to make the components are different else react will render as if it is the same component with different props. Refer docs for better understanding
 
 <h2>Passing Data Via Context</h2>
-Usually we pass data from parent component to down the tree via props. But it will lead to performance issues when we pass through several children which dont even need them. This will cause unnecessary re renders. This can be solved by context. We wrap the parent component with the context and make sure all the children down the tree receives the data (context).
+Usually we pass data from parent component to down the tree via props. But it will lead to performance issues when we pass through several children which dont even need them. This will cause unnecessary re renders. This can be solved by context. We wrap the parent component with the context and make sure all the children down the tree receives the data (context). Most common use cases for context is theming, to know logged in user details, routing etc. It is easy to misuse context, hence use it only when u really need it (if props become overhead then consider context).
 
-![Alt text](image.png)
+<img src="image.png" alt="Alt text" width="300" height="200">
