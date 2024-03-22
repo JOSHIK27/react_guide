@@ -9,10 +9,11 @@ import QueueState from "./components/03_componentMemory/queueStates";
 import LiftingUpTheState from "./components/03_componentMemory/liftingState";
 import PreserveAndResetState from "./components/03_componentMemory/preserveAndResetState";
 import ViaContext from "./components/04_passingData/VIaContext";
+import LazyLoading from "./components/06_optimisations/lazyLoading";
 export default function App() {
   return (
     <>
-      <ViaContext />
+      <LazyLoading />
     </>
   );
 }
