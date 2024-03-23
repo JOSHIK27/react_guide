@@ -38,8 +38,11 @@ Usually we pass data from parent component to down the tree via props. But it wi
 <h2>Standard Hooks</h2>
 Hooks are just like normal javascript functions which start with "use" and lets u hook into some core features of react.
 
-<h3>useState</h2>
+<h3>useState</h3>
 The most important and common hook used in the react. This returns the value of state variable and setter function. This is responsible for re rendering for components.
+
+<h3>useEffect</h3>
+Extremely powerful if u want to handle something on sideeffect (on change of some other stuff in ur component). Takes a callback and a dependency array and returns undefined. Callback optionally returns a cleanup function which runs first when dependecny is changed (first clean up function is executed and then callback). If u don't pass dependency array, callback is executed each time component is rendered. If u pass empty, callback is executed only once during first render. Common usecases -> fetching data, initial animations for landing page etc. Thumb rule is if something has to done changed in the page on some other change (simply means side effect), useeffect can be used by passing the dependency.
 
 <h3>useContext</h3>
 This is used to extract the context from the context variable that is passed by context provider.
