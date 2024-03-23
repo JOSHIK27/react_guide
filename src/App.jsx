@@ -11,10 +11,12 @@ import PreserveAndResetState from "./components/03_componentMemory/preserveAndRe
 import ViaContext from "./components/04_passingData/VIaContext";
 import LazyLoading from "./components/06_optimisations/lazyLoadingFunctions";
 import LazyLoadingComponents from "./components/06_optimisations/lazyLoadingComponents";
+import UseMemoExample from "./components/05_standardHooks/useMemo";
+import UseStateExample from "./components/05_standardHooks/useState";
 export default function App() {
   return (
     <>
-      <LazyLoadingComponents />
+      <UseStateExample />
     </>
   );
 }

@@ -35,6 +35,20 @@ Usually we pass data from parent component to down the tree via props. But it wi
 
 <img src="image.png" alt="Alt text" width="300" height="200">
 
+<h2>Standard Hooks</h2>
+Hooks are just like normal javascript functions which start with "use" and lets u hook into some core features of react.
+
+<h3>useState</h2>
+The most important and common hook used in the react. This returns the value of state variable and setter function. This is responsible for re rendering for components.
+
+<h3>useEffect</h3>
+
+<h3>useMemo</h2>
+Very powerful in caching a heavy computation (like filtering an array etc). Use only if computation is expensive (more than 1 ms as per docs) else it would cause overhead. Takes a callback with no paramters and a dependency array. Each time the dependency array changes, the computation inside callback function body is calculated are return value (any js variable).
+
+<h4>memo</h4>
+Let us say we have a component. This component has child components. Lets say parent component is rendered, then react renders all of its child components recursively. So, what if props of child component are not changed ? There is no point of re-rendering. Here comes the memo, we can wrap child component with memo while exporting them.
+
 <h2>Bundling</h2>
 Merging all the import files to a single file and loaded once. Webpack does this magic under the hood.
 
