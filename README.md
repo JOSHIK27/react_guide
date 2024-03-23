@@ -2,7 +2,7 @@
 
 ## Moto
 
-This repo goes through react documentation from the start to the end. Few examples are taken from react documentation.
+This Repo is a quick refresher for all the important concepts in REACT along with code.
 
 <h2>What is REACT ?</h2>
 React is a javascript library (not framework !) which is very powerful in creating frontend applications with ease.
@@ -56,7 +56,7 @@ Let us say we have a component. This component has child components. Lets say pa
 refs are just like state variables which persist across the renders but do not trigger the renders. Refs are mutable. Most common usecase is, react allows to add ref attributes to dom elements. We can create a ref and store this as ref value to dom node. This can then be used to access the dom node. useRef returns an object with current property and a value. (focusing inputs, playing videos, scrolling image to view are common usecases)
 
 <h2>Routing</h2>
-Routing is mechanism of navigating across different webpages. React Router is the most popular library used for routing.
+Routing is mechanism of navigating across different webpages. React Router is the most popular library used for routing. Checkout the 06_routing folder for the code (goes through most common features of router).
 
 <h2>Bundling</h2>
 Merging all the import files to a single file and loaded once. Webpack does this magic under the hood.
