@@ -54,6 +54,10 @@ Let us say we have a component. This component has child components. Lets say pa
 
 <h3>useRef</h3>
 refs are just like state variables which persist across the renders but do not trigger the renders. Refs are mutable. Most common usecase is, react allows to add ref attributes to dom elements. We can create a ref and store this as ref value to dom node. This can then be used to access the dom node. useRef returns an object with current property and a value. (focusing inputs, playing videos, scrolling image to view are common usecases)
+
+<h2>Routing</h2>
+Routing is mechanism of navigating across different webpages. React Router is the most popular library used for routing.
+
 <h2>Bundling</h2>
 Merging all the import files to a single file and loaded once. Webpack does this magic under the hood.
 

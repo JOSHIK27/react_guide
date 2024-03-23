@@ -3,7 +3,7 @@ import { Suspense, lazy } from "react";
 // we are adding delay intentionally. Meanwhile fallback will be rendering and after 2 seconds actual component is rendered
 // in real world, if a component is taking significant amount of time to load (heavy funcitons / time taking ops), we can lazy load them
 const Comp = lazy(() =>
-  wait(2000).then(() => import("../06_optimisations/lazyComp"))
+  wait(2000).then(() => import("../07_optimisations/lazyComp"))
 );
 export default function LazyLoadingComponents() {
   return (
