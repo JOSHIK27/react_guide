@@ -42,13 +42,18 @@ Hooks are just like normal javascript functions which start with "use" and lets 
 The most important and common hook used in the react. This returns the value of state variable and setter function. This is responsible for re rendering for components.
 
 <h3>useContext</h3>
-This is helpful to extract the context from the context variable that is passed by context provider.
+This is used to extract the context from the context variable that is passed by context provider.
+
+<h3>useCallback</h3>
+Used to cached a function itself (unlike value -> useMemo)
 <h3>useMemo</h2>
 Very powerful in caching a heavy computation (like filtering an array etc). Use only if computation is expensive (more than 1 ms as per docs) else it would cause overhead. Takes a callback with no paramters and a dependency array. Each time the dependency array changes, the computation inside callback function body is calculated are return value (any js variable).
 
 <h4>memo</h4>
 Let us say we have a component. This component has child components. Lets say parent component is rendered, then react renders all of its child components recursively. So, what if props of child component are not changed ? There is no point of re-rendering. Here comes the memo, we can wrap child component with memo while exporting them.
 
+<h3>useRef</h3>
+refs are just like state variables which persist across the renders but do not trigger the renders. Refs are mutable. Most common usecase is, react allows to add ref attributes to dom elements. We can create a ref and store this as ref value to dom node. This can then be used to access the dom node. useRef returns an object with current property and a value. (focusing inputs, playing videos, scrolling image to view are common usecases)
 <h2>Bundling</h2>
 Merging all the import files to a single file and loaded once. Webpack does this magic under the hood.
 

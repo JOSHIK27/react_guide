@@ -13,10 +13,13 @@ import LazyLoading from "./components/06_optimisations/lazyLoadingFunctions";
 import LazyLoadingComponents from "./components/06_optimisations/lazyLoadingComponents";
 import UseMemoExample from "./components/05_standardHooks/useMemo";
 import UseStateExample from "./components/05_standardHooks/useState";
+import UseContextExample from "./components/05_standardHooks/useContext";
+import UseCallbackExample from "./components/05_standardHooks/useCallback";
+import UseRefExample from "./components/05_standardHooks/useRef";
 export default function App() {
   return (
     <>
-      <UseStateExample />
+      <UseRefExample />
     </>
   );
 }
