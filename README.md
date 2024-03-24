@@ -18,6 +18,8 @@ Each react component is nothing but a javascript function which returns a custom
 Probably most important concept in react. State is a just like any javascript variable with some super powers.
 It is the one the which triggers re-renders and it is the only variable whose value persist bn the renders. Changes made to local variables wont trigger re-renders. Hence, state variables provide a method (setState) which allows to update the state which further re renders the component. useState hook provides us these. Hooks are just like javascript functions which lets you hook through react core features. State is isolated and private. Each component has its own isolated states.
 
+<h2>Props</h2>
+As the name suggests, props are properties of components. These can be passed via attributes from a parent to a child component. The props can be extracted from the child function parameter (usually destructured at the same place for better readability).
 <h2>Rendering</h2>
 
 Rendering happens in cases. Initial rendering and setting the state of the component. During the initial render, <App/> renders all of its children. For subsequent renders, react efficently renders only the component which is responsible for triggering the render. Rendering involves in three phases : Triggering, render (making necessary changes in VDOM), commit to DOM(painting the UI). If the compenent which is rendered has children, all of them are rendered too (recursive). although this can be optimised with Memo.
